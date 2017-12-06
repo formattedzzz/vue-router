@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.home{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.home .home-header{
+    height: 100px;  
+
+}
+.home .home-header>i{
+    line-height: 100px;
+    cursor: pointer;
+}
+.home .home-header .userinfo{
+    float: right;
+    height: 100px;
+    width: 150px;
+    position: relative;
+    cursor: pointer;
+}
+.home .home-header .userinfo div{
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    line-height: 100px;
+    right: 0px;
+    top: 0px;
+}
+.home .home-header .userinfo div {
+    color: #fc6423;
+    font-size: 25px;
+}
+
+.home .home-header .loginbtn{
+    font-size: 25px;
+    color: #fc6423;
+}
+.home .nav{
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+.home .options{
+    text-align: center;
+}
+.home .options span{
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fc6423;
+    border: 1px solid #fc6423;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.home .options span:hover{
+    background-color: #fc6423;
+    color: #fff;
+}
+/*-----------------------------------------------------------*/
+
+.login{
+    text-align: center;
+    margin-top: 200px;
+}
+.login .input{
+    margin: 20px auto;
+    border: none;
+}
+.login input {
+    outline: none;
+    width: 400px;
+    height: 40px;
+    font-size: 20px;
+    color: #fc6423;
+    border-radius: 10px;
+    background-color: #fff;
+    border:1px solid red;
+}
+/*============================================================*/
+.navhead{
+    background-color: #eee;
+line-height: 100px;
+font-size: 35px;
+margin: 0 auto;
+}
+.navhead span{
+margin-left: 40px;
+cursor: pointer;
+}
+.navhead span:hover{
+color: #fc6423;
+transition: 0.3s ease-in;
+}
+.navhead .is-active{
+color: red;
+}
+.navhead .logout , .navhead .userinfo{
+display: inline-block;
+float: right;   
+margin-right: 50px; 
+margin-left: 0;
+}
+.navhead .logout{
+color:red;
+}
+.navhead .subnav{
+padding-left: 50px;
+color: #555;
+height: 60px;
+line-height: 60px;
+font-size: 25px;
+}
+/*============================================================*/
+.project{
+margin-top:70px;
+}
+.project .addproject{
+width: 720px;
+height: 50px;
+border: 2px solid #555;
+border-radius: 5px;
+text-align: center;
+line-height: 50px;
+font-size: 25px;
+margin: 0 auto;
+}
+.project .workarea{
+margin: 100px auto;
+display: flex;
+width: 1200px;
+justify-content: space-between;
+}
+.project .workarea div{
+width: 250px;
+height: 350px;
+color: #fff;
+font-size: 30px;
+text-align: center;
+line-height: 350px;
+background-color: #333;
+border-radius: 30px;
+
+}
+/*============================================================*/
+.coding{
+margin-top:70px;
+}
+
+.coding .workarea{
+margin: 100px auto;
+display: flex;
+width: 1200px;
+justify-content: space-between;
+}
+.coding .workarea div{
+width: 250px;
+height: 350px;
+color: #fff;
+font-size: 30px;
+text-align: center;
+line-height: 350px;
+background-color: #333;
+border-radius: 30px;
+
+}
+/*============================================================*/
+.documents{
+margin-top: 80px;
+height: 700px;
+}
+.documents .mulu{
+width: 20%;
+float: left;
+}
+.documents .mulu h4{
+margin: 0;
+height: 40px;
+line-height: 40px;
+padding-left: 50px;
+font-size: 22px;
+color: #333;
+}
+.documents .mulu h5{
+margin: 0;
+height: 30px;
+line-height: 30px;
+padding-left: 75px;
+font-size: 16px;
+color: #666;
+}
+.documents .mulu h4:hover , .documents .mulu h5:hover{
+    color: #fc6423;
+}
+.documents .detail{
+background-color: #eee;
+width: 78%;
+float: right;
+height: 600px;
+overflow: auto;
+position: relative;
+}
+.documents .detail h4{
+height: 50px;
+padding-left: 50px;
+line-height: 50px;
+}
+.documents .detail h5{
+height: 50px;
+padding-left: 70px;
+line-height: 50px;
+}
+.documents .detail div{
+height: 500px;
+text-align: center;
+line-height: 500px;
+background-color: #666;
+}
+
+.v-enter{
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+}
+.v-enter-to{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+}
+.v-enter-active{
+    -webkit-transition: 0.3s ease-out;
+}
+.v-leave{
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+}
+.v-leave-to{
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+}
+.v-leave-active{
+    transition: 0.3s ease-out;
+}
